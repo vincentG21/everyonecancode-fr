@@ -91,3 +91,19 @@ Maintenant, nous voulons également ajouter les secrets à notre flux de travail
 Cliquez sur le lien frontend affiché sous l'étape de déploiement sous votre pipeline `https://<yourgithubhandle>.github.io/...` ou ouvrez l'application sur votre téléphone.
 
 Notre application frontend devrait maintenant avoir un nouveau bouton avec un symbole de chat qui nous permet de discuter avec notre assistant. L'assistant est alimenté par le modèle que nous avons déployé via le service Azure OpenAI. Discutez avec votre bot 🎉
+
+### Quelle est la prochaine étape?
+
+Commencez votre propre voyage de codage maintenant ou essayez une certification Azure comme nous l'avons fait en utilisant Udacity, Udemy, Pluralsight, Edx etc., assurez-vous de consulter les liens postés ci-dessous:
+
+  :::tip
+  - [Cours de programmation sur Udacity](https://www.udacity.com/course/intro-to-programming-nanodegree--nd000)
+  - [Chemin d'apprentissage des fondamentaux de l'IA Microsoft Azure (avec certification optionnelle)](https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/)
+  - [Chemin d'apprentissage des fondamentaux de Microsoft Azure (avec certification optionnelle)](https://learn.microsoft.com/en-gb/certifications/exams/az-900)
+  :::
+
+Assurez-vous de consulter nos programmes Microsoft:
+
+- [Programme Aspire de Microsoft pour les embauches en début de carrière](https://www.microsoft.com/en-ie/earlycareers/aspire-program)
+- Stages chez MS
+- [Carrières professionnelles chez Microsoft](https://careers.microsoft.com/)
