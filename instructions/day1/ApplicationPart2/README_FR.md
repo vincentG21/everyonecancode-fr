@@ -23,7 +23,7 @@ Aujourd'hui, vous allez apprendre comment :
   1. [Préparer le téléchargement de l'image](#préparer-le-téléchargement-de-limage)
   2. [Faire fonctionner le backend de l'application dans le cloud](#faire-fonctionner-le-backend-de-lapplication-dans-le-cloud)
   3. [Déployer le téléchargement de l'image](#déployer-le-téléchargement-de-limage)
-3. [Surfacturé ? Nous avons ce qu'il vous faut](#surfacturé-nous-avons-ce-quil-vous-faut)
+3. [Dépassé ? Nous avons ce qu'il vous faut](#surfacturé-nous-avons-ce-quil-vous-faut)
 
 ### Ressources informatives supplémentaires
 
@@ -161,9 +161,9 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 - Assurez-vous d'ajuster les paramètres selon l'image ci-dessous :
   - Nom : `<choisissez votre propre nom unique>`
   - Publier : `Code`
-  - Pile d'exécution : `Python 3.8`
+  - Pile d'exécution : `Python 3.12`
   - Système d'exploitation : `Linux`
-  - Région : `West Europe`
+  - Région : `France Central`
     ![backend 0](./images/light/BackendApp0.png)
 - Créez un nouveau plan de service App et `<choisissez votre propre nom>`.
   ![backend 1](./images/light/BackendApp1.png)
@@ -198,7 +198,7 @@ Maintenant, votre compte de stockage et votre application web sont correctement 
 Il manque encore une petite configuration. Notre application utilise un module prêt à l'emploi pour que les utilisateurs puissent interagir avec leur contenu. Mais ce module n'est pas encore installé. Pour qu'il soit installé, vous fournissez à l'application web une configuration qui est exécutée lorsque l'application est lancée, permettant aux utilisateurs d'interagir avec les données de notre application.
 
 - Naviguez vers **Configuration** sous _Settings_.
-- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.8.
+- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.12.
 - Derrière **Startup Command**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
   ![Comment configurer la commande de démarrage de l'application Web](./images/light/AppServiceStartupCommand.png)
 
