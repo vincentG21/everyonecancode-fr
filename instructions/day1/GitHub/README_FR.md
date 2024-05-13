@@ -77,10 +77,11 @@ Après quelques secondes, une nouvelle fenêtre de navigateur s'ouvrira avec vot
 
 ![Installer les extensions recommandées](./images/light/InstallRecommendedExtensions.png)
 
-Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation de l'extension *Python* notament. 
+Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation de l'extension *Python* et GitHub Copilot notament. 
 
 > Python est un des nombreux langages de programation
-> Les extensions permettront de vous aider à mieux intéragir avec le langage Python et les autres outils du projet.
+> GitHub Copilot vous permet de vous aider à programmer, vous pourrez l'utiliser dans une des prochaines sections.
+> Les extensions permettront de vous aider à mieux intéragir avec les différents outils nécessaires au projet.
 
 Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt:
 
