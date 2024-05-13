@@ -189,7 +189,7 @@ Maintenant, connectons notre application à notre stockage afin que vous puissie
   | `STORAGE` | Custom | `<collez votre chaîne de connexion (copiée plus tôt) du Storage Account>` |
 - Cliquez sur **Ok** et **Sauvegarder**.
 - Naviguez et descendez jusqu'à l'onglet **CORS** sur le côté gauche de votre service d'application et entrez `https://<YourGithubHandle>.github.io` sous _Allowed Origins_.
-- Cliquez à nouveau sur **Save**.
+- Cliquez à nouveau sur **Sauvegarder**.
 
 > CORS (Cross Origin Resource Sharing): Est une mesure de sécurité qui empèche le frontend d'un site web de communiquer avec le backend d'un autre sauf autorisation spéciale.
 
@@ -201,7 +201,7 @@ Il manque encore une petite configuration. Notre application utilise un module p
 
 - Naviguez vers **Configuration** sous **Paramètres**.
 - Sous l'onglet **Paramètres généraux**, vous devriez trouver les **Paramètres de la pile**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.12.
-- Derrière **Commande de démarrage**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
+- Derrière **Commande de démarrage**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Enregistrer**.
   ![Comment configurer la commande de démarrage de l'application Web](./images/light/AppServiceStartupCommand.png)
 
 ### Déployer le code backend de Milligram sur Azure Web App via GitHub Actions
