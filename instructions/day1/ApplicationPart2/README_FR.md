@@ -86,7 +86,7 @@ Jetez un œil au site web. Essayez de changer le profil par votre nom de compte 
 
 ### Ouvrez la page GitHub sur votre téléphone
 
-Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, vous poulez l'utiliser sur vos téléphones mobiles pour pouvoir utiliser
+Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, vous pouvez l'utiliser sur vos téléphones mobiles pour pouvoir utiliser
 les caméras pour prendre des selfies et des photos géniales pour Milligram. Ses principales caractéristiques sont :
 
 - Afficher certaines informations de votre compte GitHub sur votre profil
