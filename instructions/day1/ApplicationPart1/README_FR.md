@@ -56,7 +56,7 @@ Cela devrait ressembler à ceci :
 
 Félicitations ! Vous venez de créer une nouvelle branche et de vous placer dessus avec succès. Maintenant, vous pouvez commencer à apporter des modifications à votre code !
 
-## Changer le titre et sa couleur de votre application
+## Changer le titre et sa couleur dans votre application
 
 Ouvrez le fichier `Home.vue` du dossier `frontend/src/views`. En haut, vous trouverez un élément appelé `<template>` qui décrit la structure de base de la page d'accueil. Vous pouvez changer le titre de l'application comme vous le souhaitez en changeant le texte entre les balises `<b-navbar-item>`.
 
