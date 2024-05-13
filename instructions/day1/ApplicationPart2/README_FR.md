@@ -65,7 +65,9 @@ Assurez-vous que les Actions ont des permissions de lecture/écriture. Vérifiez
 - Dans l'onglet **Actions** de votre dépôt, cliquez sur le workflow **pages**.
 - Ouvrez le menu déroulant **Run workflow** et cliquez sur le bouton **Run workflow** pour confirmer l'exécution du workflow.
 
-Maintenant, observez comment le workflow est exécuté et jetez un œil aux étapes individuelles qui sont exécutées pour vous par GitHub.
+> Workflow: Dans GitHub Actions, un workflow est une suite d'actions (ou étapes) permettant de lancer d'exécuter des lignes de commandes de façon automatisé. Dans notre exemple nous utilisons ce mécanisme pour déployer automatiquement notre site.
+
+Maintenant, observez comment le workflow est exécuté et jetez un œil aux étapes individuelles qui sont exécutées pour vous par GitHub Actions.
 
 ![Exécuter le workflow](./images/FrontendRunWorkflow.png)
 
