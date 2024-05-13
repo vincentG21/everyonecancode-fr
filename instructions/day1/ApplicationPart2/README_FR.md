@@ -199,27 +199,27 @@ Maintenant, votre compte de stockage et votre application web sont correctement 
 
 Il manque encore une petite configuration. Notre application utilise un module prêt à l'emploi pour que les utilisateurs puissent interagir avec leur contenu. Mais ce module n'est pas encore installé. Pour qu'il soit installé, vous fournissez à l'application web une configuration qui est exécutée lorsque l'application est lancée, permettant aux utilisateurs d'interagir avec les données de notre application.
 
-- Naviguez vers **Configuration** sous _Settings_.
-- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.12.
-- Derrière **Startup Command**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
+- Naviguez vers **Configuration** sous **Paramètres**.
+- Sous l'onglet **Paramètres généraux**, vous devriez trouver les **Paramètres de la pile**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.12.
+- Derrière **Commande de démarrage**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
   ![Comment configurer la commande de démarrage de l'application Web](./images/light/AppServiceStartupCommand.png)
 
 ### Déployer le code backend de Milligram sur Azure Web App via GitHub Actions
 
-Pour que notre application de réseaux sociaux puisse réellement faire quelque chose, vous devez amener notre code source sur l'application Web Azure. Pour ce faire, vous automatiserez ce "déploiement". Ainsi, vous n'avzez pas à compter sur un processus manuel chaque fois que vous voulez apporter des modifications (par exemple, changer le titre de l'application) à notre application et ainsi, vous évitez de nombreuses erreurs.
+Pour que notre application de réseaux sociaux puisse réellement faire quelque chose, vous devez amener votre code source sur l'application Web Azure. Pour ce faire, vous automatiserez ce "déploiement". Ainsi, vous n'avzez pas à compter sur un processus manuel chaque fois que vous voulez apporter des modifications (par exemple, changer le titre de l'application) à votre application et ainsi, vous éviterez de nombreuses erreurs.
 
-- Naviguez vers l'onglet _Deployment Center_ sur le côté gauche de votre application Web dans le portail Azure.
-- Sous l'onglet **Settings**, sélectionnez **GitHub** comme **Source** et cliquez sur **Authorize**.
+- Naviguez vers l'onglet **Centre de déploiement** sur le côté gauche de votre application Web dans le portail Azure.
+- Sous l'onglet **Paramètre**, sélectionnez **GitHub** comme **Source**.
 - Sous **Organization**, sélectionnez votre identifiant GitHub et sous **Repository**, sélectionnez votre depôt ainsi que la branche `main`.
-- Cliquez sur **Save**.
+- Cliquez sur **Enregistrer**.
 
-Une fois que vous avez cliqué sur **Save**, le service crée automatiquement un fichier de workflow dans votre dépôt GitHub. Ce workflow est immédiatement exécuté et après environ 2 minutes, votre application web est prête. Vous pouvez également vérifier votre déploiement dans l'onglet "Actions" de votre dépôt. La couleur verte est toujours un bon signe.
+Une fois que vous avez cliqué sur **Enregistrer**, le service crée automatiquement un fichier de workflow dans votre dépôt GitHub. Ce workflow est immédiatement exécuté et après environ 2 minutes, votre application web est prête. Vous pouvez également vérifier votre déploiement dans l'onglet "Actions" de votre dépôt. La couleur verte est toujours un bon signe.
 
 ### Vérifiez si l'application Milligram fonctionne correctement
 
 Faisons une pause. Pour vous assurer que vous êtes sur la bonne voie, testez si le frontend de votre application obtient une réponse de votre service backend. Avant de tout rassembler, vous devez vous assurer que le service backend fonctionne comme prévu.
 
-- Naviguez vers l'onglet **Overview** sur le côté gauche du Web App Service.
+- Naviguez vers l'onglet **Vue d'ensembler** sur le côté gauche du Web App Service.
   ![URL du service d'application](./images/light/AppServicesDocLink.png)
 - Cliquez sur Domaine par défaut, ajoutez `/docs` à la fin, puis testez le site Web en utilisant la documentation interactive pour déterminer si les fonctionnalités de notre Milligram fonctionnent.
 - Dans votre navigateur, vous aurez la vue suivante :
@@ -239,7 +239,7 @@ D'abord, vous avez déployé le frontend (interface utilisateur) de notre applic
 
 Vous avez créé une ressource de stockage, elle est responsable du stockage de vos images. Ensuite, vous avez créé une ressource d'application Web, ici vous exécuterez votre logique de serveur. La logique du serveur est écrite en Python en utilisant un framework (boite à outil) appelé FastAPI. Le code de la logique du serveur est hébergé dans le dépôt GitHub de everyonecancode. 
 
-Vous avez connecté l'application web au dépôt GitHub et vous avez demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Ensuite, vous essaierez de connecter le Frontend au Backend.
+Vous avez connecté l'application web au dépôt GitHub et vous avez demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Maintenant, vous allez essayer de connecter le Frontend au Backend.
 
 ### Intégrer l'URL de l'application web Azure dans les secrets de GitHub
 
