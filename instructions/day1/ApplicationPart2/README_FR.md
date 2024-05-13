@@ -74,7 +74,7 @@ Maintenant, observez comment le workflow est exécuté et jetez un œil aux éta
 ### Activer GitHub Pages dans les paramètres du projet
 
 Pour pouvoir afficher le site Web (frontend) que vous avez construit et déployé en utilisant GitHub Actions, vous devez activer GitHub Pages pour votre dépôt. GitHub Pages est une manière facile d'afficher un site Web (statique) lié à votre dépôt.
-Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Vous l'utiliserons pour servir le frontend pour Milligram.
+Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Vous l'utiliserez pour héberger le frontend pour Milligram.
 
 - Allez dans l'onglet **Settings** de votre dépôt-
   ![Paramètres du dépôt](./images/RepoSettingsTab.png)
