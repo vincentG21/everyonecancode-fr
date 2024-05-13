@@ -22,7 +22,7 @@ Aujourd'hui, vous allez apprendre comment :
 
 ## Créer une nouvelle branche dans votre projet
 
-Allez sur votre dépôt sur GitHub. Cliquez sur le menu déroulant **main** et tapez le nom de votre nouvelle branche (par exemple, update-title-and-color). Cliquez sur 'Create branch : update-title-and-color' pour la créer.
+Allez sur votre dépôt sur GitHub. Cliquez sur le menu déroulant **main** et tapez le nom de votre nouvelle branche (par exemple, update-title-and-color). Cliquez sur **Create branch : update-title-and-color from main** pour la créer.
 
 ![Créer une nouvelle branche](./images/create-branch.png)
 
