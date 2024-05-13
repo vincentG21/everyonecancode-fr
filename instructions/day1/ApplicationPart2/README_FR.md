@@ -86,7 +86,7 @@ Jetez un œil au site web. Essayez de changer le profil par votre nom de compte 
 
 ### Ouvrez la page GitHub sur votre téléphone
 
-Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, vous voulez l'utiliser sur nos téléphones mobiles pour pouvoir utiliser
+Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, vous poulez l'utiliser sur vos téléphones mobiles pour pouvoir utiliser
 les caméras pour prendre des selfies et des photos géniales pour Milligram. Ses principales caractéristiques sont :
 
 - Afficher certaines informations de votre compte GitHub sur votre profil
@@ -117,7 +117,7 @@ Le backend de l'application recevra les photos téléchargées, les stockera pou
 
 Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme vous voulez créer notre propre application de réseaux sociaux, vous avez besoin de photos pour notre "Fil d'actualités". Cela signifie que vous avez besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est votre code).
 
-Pour stocker les fichiers, vous utiliserez un "Compte de stockage Azure" et pour exécuter notre application, vous utiliserez une "Application web Azure".
+Pour stocker les fichiers, vous utiliserez un "Compte de stockage Azure" et pour exécuter votre application, vous utiliserez une "Application web Azure".
 Tout d'abord, connectez-vous à votre Compte Azure.
 
 ### Se connecter à Azure
@@ -130,7 +130,7 @@ Tout d'abord, connectez-vous à votre Compte Azure.
 
 ### Créer un compte de stockage
 
-Notre compte de stockage est l'endroit où vous sauvegardez nos photos pour notre fil d'actualités.
+Votre compte de stockage est l'endroit où vous sauvegardez vos photos pour votre fil d'actualités.
 À l'intérieur du compte de stockage, vous utiliserez un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). 
 Tout comme le disque dur de votre ordinateur, le Blob Storage peut contenir une quantité massive de fichiers. Un point intéressant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
 
@@ -140,15 +140,15 @@ Tout comme le disque dur de votre ordinateur, le Blob Storage peut contenir une 
 
 - Allez à la page d'accueil du portail Azure.
 - Cliquez sur **+ Créer une ressource**.
-- Recherchez **Storage Account** et cliquez sur **Create**.
+- Recherchez **Storage Account** et cliquez sur **Créer**.
 - Sélectionnez votre abonnement et le groupe de ressources avec le nom que vous avez utilisé pour vous connecter au portail Azure.
 - Le nom de votre compte de stockage Azure doit être unique à l'échelle mondiale. Il doit également utiliser des petites lettres et aucun caractère spécial.
-- Assurez-vous de sélectionner `Standard` pour **Performance** et `Locally-redundant storage (LRS)` pour **Redundancy**.
+- Assurez-vous de sélectionner `Standard` pour **Performance** et `Locally-redundant storage (LRS)` pour **Redondance**.
   ![Storage](./images/light/BackendStorage1.png)
-- Cliquez sur _Review_ puis sur _Create_ pour terminer la création du compte de stockage.
-- Une fois le compte de stockage créé, il devrait y avoir un bouton _Go to resource_. Cliquez dessus.
-- Vous devriez maintenant voir votre compte de stockage. Sélectionnez _Containers_ sur le côté gauche.
-- Cliquez sur le bouton _New Container_ et créez un conteneur nommé `images`. Laissez tout dans les paramètres préconfigurés tels quels.
+- Cliquez sur **Vérifier** puis sur **créer** pour terminer la création du compte de stockage.
+- Une fois le compte de stockage créé, il devrait y avoir un bouton **Aller à la resource**. Cliquez dessus.
+- Vous devriez maintenant voir votre compte de stockage. Sélectionnez **Conteneur** sur le côté gauche.
+- Cliquez sur le bouton **Nouveau Conteneur** et créez un conteneur nommé **images**. Laissez tout dans les paramètres préconfigurés tels quels.
 
 C'est l'endroit où toutes les images téléchargées sur notre application Milligram seront stockées.
 
@@ -158,7 +158,7 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 
 - Retournez à la page d'accueil du portail Azure.
 - Cliquez sur **+ Créer une ressource** comme vous l'avez fait précédemment.
-- Recherchez **Web App** et cliquez sur **Create**.
+- Recherchez **Web App** et cliquez sur **Créer**.
 - Sélectionnez votre abonnement et votre groupe de ressources.
 - Assurez-vous d'ajuster les paramètres selon l'image ci-dessous :
   - Nom : `<choisissez votre propre nom unique>`
@@ -169,27 +169,27 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
     ![backend 0](./images/light/BackendApp0.png)
 - Créez un nouveau plan de service App et `<choisissez votre propre nom>`.
   ![backend 1](./images/light/BackendApp1.png)
-- Dans le menu déroulant du plan tarifaire, sélectionnez **Free F1** qui est gratuit, sinon vous pourriez être facturé en créant un plan plus grand.
-- Cliquez sur **Review + Create** en bas de l'écran.
-- Revoyez les informations affichées et cliquez sur **Create** sur l'écran suivant pour lancer l'application backend.
+- Dans le menu déroulant du plan tarifaire, sélectionnez **Gratuit F1** qui est gratuit, sinon vous pourriez être facturé en créant un plan plus grand.
+- Cliquez sur **Vérifier + créer** en bas de l'écran.
+- Revoyez les informations affichées et cliquez sur **Créer** sur l'écran suivant pour lancer l'application backend.
 
-> 📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche **Estimated price - Free**"
+> 📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche **Prix estimé - Gratuit**"
 
 
 ### Intégrer le stockage et configurer l'application Web
 
 Maintenant, connectons notre application à notre stockage afin que vous puissiez prendre des photos sur votre téléphone et les stocker. Vous devez indiquer à l'application Web où elle peut trouver notre service de stockage. L'application peut prendre des configurations externes pour configurer la connexion au compte de stockage.
 
-- Pour cela, naviguez à nouveau vers votre _Storage account_. Vous devriez pouvoir le trouver via la barre de recherche en haut soit en recherchant son nom unique, soit simplement en recherchant le compte de stockage.
-- Sous **Access keys**, vous pouvez trouver la **Connection string** de notre compte de stockage. Cliquez sur le bouton **Show keys** pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
+- Pour cela, naviguez à nouveau vers votre **Storage account**. Vous devriez pouvoir le trouver via la barre de recherche en haut simplement en recherchant son nom unique.
+- Sous **Clés d'accès**, vous pouvez trouver la **Chaîne de connexion** de notre compte de stockage. Cliquez sur le bouton **Afficher** pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
   ![Capture d'écran de la page Access key dans le portail Azure](./images/light/SecretAccessKeys.png)
-- Revenez à l'application web et ouvrez l'onglet _Configuration_, cliquez sur _New connection string_ et créez une nouvelle chaîne de connexion avec les paramètres suivants :
+- Revenez à l'application web et ouvrez l'onglet **Variables d’environnement**, cliquez sur **Chaînes de connexion** et créez une nouvelle chaîne de connexion avec les paramètres suivants :
   | Chaîne de connexion | Type | Valeur |
   |-|-|-|
   | `STORAGE` | Custom | `<collez votre chaîne de connexion (copiée plus tôt) du Storage Account>` |
-- Cliquez sur `ok` et `Save`.
+- Cliquez sur **Ok** et **Sauvegarder**.
 - Naviguez et descendez jusqu'à l'onglet **CORS** sur le côté gauche de votre service d'application et entrez `https://<YourGithubHandle>.github.io` sous _Allowed Origins_.
-- Cliquez à nouveau sur `Save`.
+- Cliquez à nouveau sur **Save**.
 
 > CORS (Cross Origin Resource Sharing): Est une mesure de sécurité qui empèche le frontend d'un site web de communiquer avec le backend d'un autre sauf autorisation spéciale.
 
