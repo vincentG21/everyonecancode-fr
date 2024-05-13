@@ -77,11 +77,10 @@ Après quelques secondes, une nouvelle fenêtre de navigateur s'ouvrira avec vot
 
 ![Installer les extensions recommandées](./images/light/InstallRecommendedExtensions.png)
 
-Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation des extensions *Azure Functions* et *Python*. 
+Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation de l'extension *Python* notament. 
 
-> Azure Functions est un service du Cloud Microsoft appelé Azure qui permet d'éxécuter du code sans avoir à se préoccuper de quelle machine le lance. Quand le code s'arrête la machine aussi.
 > Python est un des nombreux langages de programation
-> Les deux extensions permettront de vous aider à mieux intéragir avec le service Azure Functions et le langage Python.
+> Les extensions permettront de vous aider à mieux intéragir avec le langage Python et les autres outils du projet.
 
 Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt:
 
