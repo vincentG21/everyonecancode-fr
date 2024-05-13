@@ -219,7 +219,7 @@ Une fois que vous avez cliqué sur **Enregistrer**, le service crée automatique
 
 Faisons une pause. Pour vous assurer que vous êtes sur la bonne voie, testez si le frontend de votre application obtient une réponse de votre service backend. Avant de tout rassembler, vous devez vous assurer que le service backend fonctionne comme prévu.
 
-- Naviguez vers l'onglet **Vue d'ensembler** sur le côté gauche du Web App Service.
+- Naviguez vers l'onglet **Vue d'ensemble** sur le côté gauche du Web App Service.
   ![URL du service d'application](./images/light/AppServicesDocLink.png)
 - Cliquez sur Domaine par défaut, ajoutez `/docs` à la fin, puis testez le site Web en utilisant la documentation interactive pour déterminer si les fonctionnalités de notre Milligram fonctionnent.
 - Dans votre navigateur, vous aurez la vue suivante :
