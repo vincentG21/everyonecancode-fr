@@ -50,7 +50,7 @@ _Appuyer sur la pédale d'accélérateur déclenche une demande du frontend (pé
 
 ### Activer GitHub Actions
 
-Vous avez préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub. GitHub Pages et GitHub Actions. Commençons par les actions.
+Nous avons préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub: GitHub Pages et GitHub Actions. Commençons par les actions.
 
 - Allez dans l'onglet **Actions** de votre dépôt
 - Cliquez sur le bouton vert qui dit _I understand my workflows, go ahead and enable them_ pour activer GitHub Actions:
