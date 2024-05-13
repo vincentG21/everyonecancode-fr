@@ -183,13 +183,15 @@ Maintenant, connectons notre application à notre stockage afin que vous puissie
 - Pour cela, naviguez à nouveau vers votre **Storage account**. Vous devriez pouvoir le trouver via la barre de recherche en haut simplement en recherchant son nom unique.
 - Sous **Clés d'accès**, vous pouvez trouver la **Chaîne de connexion** de notre compte de stockage. Cliquez sur le bouton **Afficher** pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
   ![Capture d'écran de la page Access key dans le portail Azure](./images/light/SecretAccessKeys.png)
+
+  Maintenant, retournez dans votre application web:
 - Revenez à l'application web et ouvrez l'onglet **Variables d’environnement**, cliquez sur **Chaînes de connexion** et créez une nouvelle chaîne de connexion avec les paramètres suivants :
   | Chaîne de connexion | Type | Valeur |
   |-|-|-|
   | `STORAGE` | Custom | `<collez votre chaîne de connexion (copiée plus tôt) du Storage Account>` |
-- Cliquez sur **Ok** et **Sauvegarder**.
-- Naviguez et descendez jusqu'à l'onglet **CORS** sur le côté gauche de votre service d'application et entrez `https://<YourGithubHandle>.github.io` sous _Allowed Origins_.
-- Cliquez à nouveau sur **Sauvegarder**.
+- Cliquez sur **Ok** et **Enregistrer**.
+- Naviguez et descendez jusqu'à l'onglet **CORS** sur le côté gauche et entrez `https://<YourGithubHandle>.github.io` sous **Origines autorisées**.
+- Cliquez à nouveau sur **Enregistrer**.
 
 > CORS (Cross Origin Resource Sharing): Est une mesure de sécurité qui empèche le frontend d'un site web de communiquer avec le backend d'un autre sauf autorisation spéciale.
 
