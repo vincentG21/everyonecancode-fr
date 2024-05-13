@@ -97,7 +97,7 @@ Maintenant, exécutez d'abord `git add .` cela sélectionnera tous les fichiers 
 
 ## Ouvrir une "pull request" et la fusionner
 
-Retournez maintenant dans votre dépôt sur GitHub. Vous devriez voir un message indiquant que vous avez poussé votre branche. Cliquez sur le bouton **Compare & pull request** pour ouvrir une nouvelle pull request.
+Retournez maintenant dans votre dépôt sur GitHub. Vous devriez voir un message indiquant que vous avez poussé du code sur votre branche. Cliquez sur le bouton **Compare & pull request** pour ouvrir une nouvelle pull request.
 
 Pour rappel: Une pull request est une demande de fusion de vos modifications dans la branche principale. C'est une manière très populaire de travailler professionnellement avec d'autres développeurs sur un projet pour garantir la qualité du code.
 
